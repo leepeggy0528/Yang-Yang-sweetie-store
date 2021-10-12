@@ -8,3 +8,13 @@ $(function(){
         }
     });
 });
+$(function(){
+    $(".list li").on({
+        mouseover:function(){
+            $(this).children("div").stop().slideDown();
+        },
+        mouseout:function(){
+            $(this).children("div").stop().slideUp();
+        }
+    });
+});

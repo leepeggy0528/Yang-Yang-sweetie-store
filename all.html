@@ -51,11 +51,35 @@
     <div id="title">
         <h2>Products</h2>
         <div class="list">
-            <button class="all">All</button>
-            <button class="Cake">Cake</button>
-            <button class="Cookie">Cookie</button>
-            <button class="Candy">Candy</button>
+            <ul>
+                <li><button class="all">All</button></li>
+                <li>
+                    <button class="cake-btn">Cake</button>
+                    <div>
+                        <button>精緻蛋糕</button>
+                        <button>乳酪系列</button>
+                        <button>千層系列</button>
+                    </div>
+                </li>
+                <li>
+                    <button class="cookie-btn">Cookie</button>
+                    <div>
+                        <button>馬卡龍</button>
+                        <button>造型餅乾</button>
+                        <button>曲奇系列</button>
+                    </div>
+                </li>
+                <li><button class="candy">Candy</button></li>
+            </ul>
+            <button class="search">
+                <img src="./images/search.png" alt="search">
+            </button>
         </div>
+        <select name="sort" id="sort">
+            <option value="">(預設)</option>
+            <option value="valueHtoL">價格高至低</option>
+            <option value="valueLtoH">價格低至高</option>
+        </select>
     </div>
     <section>
         <div class="row row-cols-3">

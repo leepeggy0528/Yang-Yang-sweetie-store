@@ -107,6 +107,13 @@ main #title{
 .list{
     display: flex;
 }
+.list ul{
+    display: flex;
+}
+.list li{
+    list-style: none;
+    position: relative;
+}
 .list button{
     background-color: unset;
     border: unset;
@@ -115,17 +122,71 @@ main #title{
     font-size: 1.3rem;
     margin-left: 20px;
 }
+.list div button{
+    margin-left: 0;
+}
+
 .list button:hover{
     color: #6daeb8;
     cursor: pointer;
     position: relative;
 }
-.list button::before{
+.list li:nth-child(2) .cake-btn:hover::after,.list li:nth-child(3) .cookie-btn:hover::after{
+    content: "▼";
+    position: absolute;
+    font-weight:lighter;
+    top: 20px;
+    left: 40%;
+    font-size: 10px;
+}
+.list li::after{
+    content: "/";
+    color: #2a5a61;
+    margin-left: 20px;
+    font-weight:bolder;
+}
+.list li div button::before{
     content: "/";
     color: #2a5a61;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
-.list button:first-child::before{
+.list li div button:first-child::before{
     content: unset;
+}
+.list li div{
+    z-index: 999;
+    padding: 10px;
+    display: none;
+    width: 400%;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    text-align: center;
+   
+/* display: flex;
+flex-direction: column; */
+} 
+.list li:nth-child(3) div{
+    left: -50px;
+} 
+.search{
+    display: flex;
+    align-items: center;
+    width: 2.6%;
+}
+.search:hover img{
+   transform: scale(1.2);
+}
+
+#sort{
+    margin-left: auto;
+    font-size: 1rem;
+    padding: 7px;
+    width: 15%;
+    border: unset;
+    border-radius: 4px;
+    color: #612a2a;
+    background-color: #ffffffc9;
 }
