@@ -1,0 +1,112 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(237,207,209,0.7) 0%, rgba(255,226,229,0.7) 25%, rgba(246,228,246,0.7) 50%, rgba(255,236,243,0.7) 75%, rgba(226,154,171,0.7) 100%);
+}
+main #title h2{
+    margin: 30px 0% 20px;
+    padding-bottom: 15px;
+    color: #815093;
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+}
+main #title h2::after{
+    content: "";
+    width: 100%;
+    border-bottom: 5px double #815093;
+    color: #815093;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+section{
+    display: flex;
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main #title{
+    width: 960px;
+    margin: auto;
+}
+
+ul{
+    list-style:inside;
+}
+/* list */
+.list{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    gap: 15px;
+    color: #298492;
+    width: 20%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.list li{
+    margin: 10px;
+    margin-left: 15px;
+}
+
+
+/* context */
+.context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+    
+}
+.context::before{
+    content: "";
+    height: 100%;
+    border-left: 2px solid #815093;
+    position: absolute;
+    
+}
+.notice{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    color: #423c94;
+    gap: 30px;
+    letter-spacing: 5px;
+}
+.notice h2{
+    color: #815093;
+    margin-bottom: 10px;
+}
+.notice p{
+    margin-left: 2rem;
+    text-indent:-2rem;
+    position: relative;
+}
+.notice p::after{
+    content: "";
+    width: 95%;
+    position: absolute;
+    border-bottom: 3px solid #c09dc394;
+    bottom: -12px;
+    left: 0;
+}
+.notice span{
+    color: #cf1111;
+    text-decoration: underline wavy;
+}
+
+.notice_context{
+    margin-left: 50px;
+    line-height: 1.8;
+}
+
+.notice_context ul,.notice_context ol{
+    margin-left: 6%;
+}
+
+.buy .notice_context{
+    margin-left: 20px;
+}
