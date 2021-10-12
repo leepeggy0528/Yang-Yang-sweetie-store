@@ -1,0 +1,350 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(237,207,209,0.7) 0%, rgba(255,226,229,0.7) 25%, rgba(246,228,246,0.7) 50%, rgba(255,236,243,0.7) 75%, rgba(226,154,171,0.7) 100%);
+}
+main #title h1{
+    margin: 30px 0% 20px;
+    color: #815093;
+    position: relative;
+    font-size: 1.7rem;
+}
+main #title h1::after{
+    content: "";
+    width: 20%;
+    border-bottom: 2px solid #815093;
+    color: #815093;
+    position: absolute;
+    top: 33px;
+    left: 16px;
+}
+section{
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main #title{
+    width: 960px;
+    margin: auto;
+}
+
+section{
+    margin-bottom: 30px;
+    border-top: solid 1px #c09dc394;
+}
+#items{
+    border-top: unset;
+}
+
+h2{
+    font-size: 1.5rem;    
+    color: #815093;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+/* title */
+#title{
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+}
+.list ul{
+    display: flex;
+}
+.list li{
+    list-style: none;
+    position: relative;
+}
+.list button{
+    background-color: unset;
+    border: unset;
+    color: #2a5a61;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+.list div button{
+    margin-left: 0;
+}
+
+.list button:hover{
+    color: #6daeb8;
+    cursor: pointer;
+    position: relative;
+}
+.list li:nth-child(2) .cake-btn:hover::after,.list li:nth-child(3) .cookie-btn:hover::after{
+    content: "▼";
+    position: absolute;
+    font-weight:lighter;
+    top: 20px;
+    left: 40%;
+    font-size: 10px;
+}
+.list li::after{
+    content: "/";
+    color: #2a5a61;
+    margin-left: 20px;
+    font-weight:bolder;
+}
+.list li div button::before{
+    content: "/";
+    color: #2a5a61;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.list li div button:first-child::before{
+    content: unset;
+}
+.list li div{
+    z-index: 999;
+    padding: 10px;
+    display: none;
+    width: 400%;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    text-align: center;
+   
+/* display: flex;
+flex-direction: column; */
+} 
+.list li:nth-child(3) div{
+    left: -50px;
+} 
+.search{
+    display: flex;
+    align-items: center;
+    width: 2.6%;
+}
+.search:hover img{
+   transform: scale(1.2);
+}
+
+/* items */
+.items{
+    box-shadow: 1px 1px 5px 1px #aaaaaa7d;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255,.4);
+    flex-grow: 1;
+}
+.items a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: unset;
+    color: #2a5a61;
+}
+.items h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.items a:hover{
+    color: #298492;
+}
+.items .pt{
+    margin-bottom: 10px;
+}
+.items .pt img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.items .context{
+    width: 100%;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #815093;
+    padding: 5px 20px 5px;
+}
+.items p{
+    margin: auto 20px;
+    font-size: 1.1rem;
+    color: #505a93;
+}
+.items .context div{
+    display: flex;
+    align-items: center;
+}
+.items .context span{
+    margin-left: auto;
+    font-size: 1.3rem;
+}
+.items .context button{
+    background-color: unset;
+    border: unset;
+    border-bottom: solid 2px #93506c;
+    color: #93506c;
+    font-size: 1.2rem;
+}
+.items .context button:hover{
+    border-bottom: double 2px #df7ea6;
+    color: #df7ea6;
+    cursor:cell;
+}
+
+/* 商品說明 */
+#explanation ul,#rating ul{
+    list-style: none;
+    color: #815093;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#explanation ul{
+    list-style: inside;
+}
+
+
+#explanation li,#rating li{
+    margin-left: 33px;
+}
+
+#explanation span,#rating span{
+    margin-left: 37px;
+}
+
+/* rating */
+#rating ul{
+    gap:20px;
+}
+
+#rating li{
+    position: relative;
+    padding-bottom: 12px;
+    margin-right: 33px;
+}
+
+#rating li::after{
+    content: "";
+    position: absolute;
+    border-bottom: solid 3px #815093a6;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#rating li:last-child::after{
+    border-bottom: none;
+    content: "";
+}
+
+/* 乳酪蛋糕 */
+#items{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+#items .items_pt{
+    width: 40%;
+    margin: auto 5% ;
+}
+
+#items .pt_else{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+#items .pt_else button{
+    border: none;
+}
+
+#items .pt_else button:hover{
+    cursor: pointer;
+}
+
+#items .items_context{
+    flex-grow: 1;
+    color: #815093;
+}
+
+#items .items_context form{
+    display: flex;
+    flex-direction: column;
+}
+form span{
+    font-size: 1.4rem;
+}
+.format,.taste{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.format div,.taste div{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.format span,.taste span{
+    width: 10%;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.format div input[type="radio"] + label,.taste div input[type="radio"]+ label{
+    width: 46%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9c9;
+    color: black;
+    cursor: pointer;
+}
+.format div input[type="radio"]:checked + label,
+.taste div input[type="radio"]:checked + label{
+    background-color: #e86573d6;
+    color: #fff;
+    
+}
+input[type="radio" i]{
+    appearance: none;
+}
+form .items_cart{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+form button{
+    font-size: 1.3em;
+    color: #93506c;
+    background-color: unset;
+    border: #93506c 1px solid;
+    width: 50%;
+    padding: 10px;
+    margin: auto auto;
+    margin-right: 0;
+    border-radius: 3px;
+}
+form button:hover{
+    cursor: pointer;
+}
+form .car:hover{
+    color: #df7ea6;
+    border: #df7ea6 1px solid;
+    text-decoration: underline;
+}
+
+.items_cart div{
+    width: 40%;
+    display: flex;
+    font-size: 1.3rem;
+}
+.items_cart div button{
+    width: 25%;
+}
+
+.items_cart div input{
+    width: 60%;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.2rem;
+}

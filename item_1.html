@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <meta name="description" content="">
+
+   <link rel="icon" href="./logo.ico">
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="css/grids.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/item_1.css">
+   <title>Yang-Yang Sweetie store</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">More</a>
+                        <div class="more">
+                            <a href="about.html">About</a>
+                            <a href="charts.html">Charts</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="category.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="notice.html">Notice</a>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <img src="./images/shopping-cart.png" alt="">
+                        </div> 
+                        <a href="cart.php">
+                            Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="title">
+            <h1>Products</h1>
+            <div class="list">
+                <ul>
+                    <li><button class="all">All</button></li>
+                    <li>
+                        <button class="cake-btn">Cake</button>
+                        <div>
+                            <button>精緻蛋糕</button>
+                            <button>乳酪系列</button>
+                            <button>千層系列</button>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="cookie-btn">Cookie</button>
+                        <div>
+                            <button>馬卡龍</button>
+                            <button>造型餅乾</button>
+                            <button>曲奇系列</button>
+                        </div>
+                    </li>
+                    <li><button class="candy">Candy</button></li>
+                </ul>
+                <button class="search">
+                    <img src="./images/search.png" alt="search">
+                </button>
+            </div>
+        </div>
+        <section id="items">
+            <div class="items_pt">
+                <div class="pt_main">
+                    <img src="./images/cake-2.jpg" alt="輕乳酪蛋糕">
+                </div>
+                <div class="pt_else">
+                    <button><img src="./images/cake-2.jpg" alt=""></button>
+                    <button><img src="./images/cake-2.jpg" alt=""></button>
+                    <button><img src="./images/cake-2.jpg" alt=""></button>
+                </div>
+            </div>
+            <div class="items_context">
+                <h2>輕乳酪蛋糕</h2>
+                <form action="#" method="get">
+                    <div class="format">
+                        <span>規格</span>
+                        <div>
+                            <input type="radio" id="big" name="format" value="big">
+                            <label for="big">
+                                大
+                            </label>
+                            <input type="radio" id="small" name="format" value="small">
+                            <label for="small">
+                                小
+                            </label>
+                        </div>
+                    </div>
+                    <div class="taste">
+                        <span>口味</span>
+                        <div>
+                            <input type="radio" name="taste" id="original" value="original">
+                            <label for="original">
+                                原味
+                            </label>
+                            <input type="radio" name="taste" id="honey" value="honey">
+                            <label for="honey">
+                                蜂蜜
+                            </label>
+                        </div>
+                    </div>
+                    <span>NT$ 350</span>
+                    <div class="items_cart">
+                        <div>
+                            <button>－</button>
+                            <input type="text" name="count" id="count">
+                            <button>＋</button>
+                        </div>
+                        <button class="car">加入購物車</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="explanation">
+            <h2>商品說明</h2>
+            <div class="explanation_context">
+                <ul>
+                    <li>成份<br>
+                        <span>鮮奶油乳酪250g、動物性鮮奶油125c.c、全蛋*2、蛋白*1、上白糖60g、低筋麵粉10g</span>
+                    </li>
+                    <li>重量<br>
+                        <span>(大) 100±2%、(小) 50±2%</span>
+                    </li>
+                    <li>賞味期限<br>
+                        <span>標示在蛋糕盒子上</span>
+                    </li>
+                    <li>保存方式<br>
+                        <span>冷凍14天，冷藏7天，建議冷凍風味更佳。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="rating">
+            <h2>顧客評價</h2>
+            <div class="rating_context">
+                <ul>
+                    <li>方羊羊 2021-10-10 18:00:<br>
+                        <span>真的非常好吃，值得回購。</span>
+                    </li>
+                    <li>蔡小花 2021-10-6 23:59:<br>
+                        <span>好吃，很好吃，非常好吃。</span>
+                    </li>
+                    <li>小羊妞 2021-9-27 17:55 :<br>
+                        <span>好吃，很好吃，非常好吃。</span>
+                    </li>
+                    <li>方羊羊 2021-9-12 10:24 :<br>
+                        <span>好吃，很好吃，非常好吃。</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="relative">
+            <h2>相關商品</h2>
+            <div class="row row-cols-3">
+                <div class="col">
+                    <div class="items">
+                        <a href="item_1.html">
+                            <div class="pt">
+                                <img src="./images/cake-2.jpg" alt="輕乳酪蛋糕">
+                            </div>
+                            <div class="context">
+                                <h3>輕乳酪蛋糕</h3>
+                                <p>口味:原味、蜂蜜</p>
+                                <div>
+                                    <button>加入購物車</button>
+                                    <span>$350</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="items">
+                        <a href="all.html">
+                            <div class="pt">
+                                <img src="./images/cake-1.jpg" alt="櫻桃蛋糕">
+                            </div>
+                            <div class="context">
+                                <h3>櫻桃蛋糕</h3>
+                                <p>口味:原味</p>
+                                <div>
+                                    <button>加入購物車</button>
+                                    <span>$150</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                        <div class="items">
+                            <a href="#">
+                                <div class="pt">
+                                    <img src="./images/red-velvet-cake-gefa338c52_640.jpg" alt="紅絲絨蛋糕">
+                                </div>
+                                <div class="context">
+                                    <h3>紅絲絨蛋糕</h3>
+                                    <p>口味:無</p>
+                                    <div>
+                                        <button>加入購物車</button>
+                                        <span>$250</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sm">
+            <a href="#"><img src="./images/facebook.png" alt="fb"></a>
+            <a href="#"><img src="./images/instagram.png" alt="ig"></a>
+            <a href="#"><img src="./images/line.png" alt="line"></a>
+        </div>
+        <div class="copyright">
+            copyright© 2021 Yang-Yang Sweetie Store
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
