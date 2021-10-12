@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+@font-face {
+  font-family: '內海-0.38';
+  src: url('../font/setofont.ttf');
+}
+@font-face {
+    font-family: 'jf';
+    src: url('../font/jf-openhuninn-1.1.ttf');
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0dbca;
+    font-family: Arial, Helvetica,'Sue Ellen Francisco','Comic Sans MS','黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei','內海-0.38', sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;/* image 會繼承父元素的寬度 */
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(180deg, rgba(185,163,123,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 0px 0px 10px 0px #484848;
+}
+.logo{
+    margin: 20px auto;
+    width: 6.5%;
+}
+.menu{
+    margin-bottom: 10px;
+}
+.menu nav ul{
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    font-weight: bold;
+    list-style: none;
+}
+.menu li:first-child{
+    position: relative;
+}
+.more{
+        display: none;
+        z-index: 999;
+        padding: 10px;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255,1);
+       
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #a57b36;
+}
+.menu a:hover{
+    border-top:2px solid #a57b36;
+    border-bottom:2px solid #a57b36;
+
+}
+.more a:hover{
+    border: none;
+    color: #cca361;
+}
+.menu nav ul li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6563667703409488) 0%, rgba(131,131,131,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sm{
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+}

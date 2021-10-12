@@ -1,0 +1,79 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(237,207,209,0.7) 0%, rgba(255,226,229,0.7) 25%, rgba(246,228,246,0.7) 50%, rgba(255,236,243,0.7) 75%, rgba(226,154,171,0.7) 100%);
+}
+main #title h2{
+    margin: 30px 0% 40px;
+    color: #815093;
+    position: relative;
+    font-size: 1.5rem;
+}
+main #title h2::after{
+    content: "";
+    width: 20%;
+    border-bottom: 2px solid #815093;
+    color: #815093;
+    position: absolute;
+    top: 33px;
+    left: 16px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main #title{
+    width: 960px;
+    margin: auto;
+}
+
+.items{
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+.items:last-child{
+    margin-right: 0%;
+}
+.items a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: unset;
+    
+    color: #2a5a61;
+}
+.items h3{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.items a:hover{
+    color: #298492;
+    text-decoration:underline;
+}
+.items .pt{
+    margin-bottom: 10px;
+}
+
+/* cake */
+#cake,#cookie,#candy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cake{
+    display: flex;
+}
+#cake .title,#cookie .title,#candy .title{
+    color: #815093;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    
+}
+#candy .items{
+    margin-right: auto;
+}
