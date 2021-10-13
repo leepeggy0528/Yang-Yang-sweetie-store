@@ -85,7 +85,9 @@ header{
     align-items: center;
     gap: 10px;
 }
-
+.menu .cart{
+    width: 35%;
+}
 /* Footer */
 footer{
     display: flex;
