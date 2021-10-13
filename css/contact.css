@@ -38,6 +38,7 @@ form button{
     padding: 10px;
     margin: auto;
     border-radius: 3px;
+    text-align: center;
 }
 form button:hover{
     cursor: pointer;
