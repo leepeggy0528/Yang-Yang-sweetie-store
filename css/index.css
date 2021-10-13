@@ -22,6 +22,7 @@ section{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    margin-bottom: 0;
 }
 main .title{
     width: 960px;
