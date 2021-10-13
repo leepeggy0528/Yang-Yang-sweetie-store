@@ -159,7 +159,7 @@ main .title{
       align-items: center;
   }
   .marquee {
-    height: 30vh;
+    height: 150px;
     width: 1080px;
     margin: 0 auto 30px;
     overflow: hidden;
@@ -194,16 +194,15 @@ main .title{
 }
 .recommend{
     width: 750px;
-    height: 50vh;
+    height: 300px;
     margin: 0 auto 30px;
     background: linear-gradient(180deg, rgba(250,214,228,1) 0%, rgba(226,154,171,1) 100%);
     border-radius: 20px;
     position: relative;
 }
 .recommend .context{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #634631;
-    font-family: '內海-0.38';
     display: flex;
     flex-direction: column;
     gap: 25px;
