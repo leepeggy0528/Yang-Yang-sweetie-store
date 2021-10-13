@@ -1,0 +1,47 @@
+main #title {
+    margin-bottom: 20px;
+}
+form,label{
+    display: flex;
+    flex-direction: column;
+}
+form {
+    gap: 25px;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 20px
+}
+label {
+    font-size: 1.2rem;
+    gap: 5px;
+    color: #815093;
+}
+input, textarea {
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    padding: 10px;
+    border: unset;
+    border-radius: 3px;
+}
+textarea{
+    resize: unset;
+    height: 150px;
+}
+
+form button{
+    font-size: 1.3em;
+    color: #93506c;
+    background-color: unset;
+    border: #93506c 2px solid;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 3px;
+}
+form button:hover{
+    cursor: pointer;
+    color: #df7ea6;
+    border: #df7ea6 2px solid;
+    text-decoration: underline;
+}

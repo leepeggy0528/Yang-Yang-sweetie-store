@@ -100,3 +100,37 @@ footer{
     display: flex;
     gap: 20px;
 }
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(237,207,209,0.7) 0%, rgba(255,226,229,0.7) 25%, rgba(246,228,246,0.7) 50%, rgba(255,236,243,0.7) 75%, rgba(226,154,171,0.7) 100%);
+}
+main #title h2{
+    margin: 30px 0% 20px;
+    color: #815093;
+    position: relative;
+    font-size: 1.7rem;
+}
+main #title h2::after{
+    content: "";
+    width: 20%;
+    border-bottom: 2px solid #815093;
+    color: #815093;
+    position: absolute;
+    top: 33px;
+    left: 16px;
+}
+section{
+    display: flex;
+    overflow: hidden;
+    width: 960px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main #title{
+    width: 960px;
+    margin: auto;
+    margin-bottom: 40px;
+}
