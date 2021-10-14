@@ -38,11 +38,12 @@ main .title{
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 90px;
 }
 .cake{
     display: flex;
     margin-bottom: 25px;
+    align-items: center;
 }
 .cake .pt{
     width: 40%;
@@ -78,10 +79,10 @@ main .title{
     content: "";
     width: 100%;
     height: 100%;
-    background-color: #e0b3b3;
+    background-color: #e0b3b3d1;
     position: absolute;
-    top: 25px;
-    left: 30px;
+    top: 20px;
+    left: 25px;
 }
 .cake:nth-child(2){
     flex-direction: row-reverse;
@@ -105,7 +106,8 @@ main .title{
 .cake .context p{
     font-size: 1.1rem;
     color: #298492;
-    letter-spacing: 15px;
+    line-height: 2.3;
+    letter-spacing: .3rem;
 } 
 .cake .context a{
     text-decoration: none;
