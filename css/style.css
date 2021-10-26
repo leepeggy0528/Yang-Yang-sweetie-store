@@ -30,7 +30,7 @@ header{
     flex-direction: column;
     position: relative;
     background: linear-gradient(180deg, rgba(185,163,123,1) 0%, rgba(255,255,255,1) 100%);
-    box-shadow: 0px 0px 10px 0px #8b252dad;
+    box-shadow: 0px 0px 8px 0px #8b252dba;
 }
 .logo{
     margin: 20px auto 0px;

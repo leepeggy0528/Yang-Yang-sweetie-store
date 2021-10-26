@@ -9,11 +9,7 @@ main #title h2::after{
     left: 0;
 }
 section{
-    display: flex;
-    overflow: hidden;
-    width: 960px;
-    margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 main #title{
     margin-bottom: 0;
@@ -71,6 +67,7 @@ ul{
     margin-left: 2rem;
     text-indent:-2rem;
     position: relative;
+    line-height: 2.2;
 }
 .notice p::after{
     content: "";
@@ -87,7 +84,7 @@ ul{
 
 .notice_context{
     margin-left: 50px;
-    line-height: 1.8;
+    line-height: 2.2;
 }
 
 .notice_context ul,.notice_context ol{
