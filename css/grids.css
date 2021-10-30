@@ -104,7 +104,7 @@
     flex: 0 0 16.66666%;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .cols-md > .col{
         /* width: 0;
         flex-grow: 1; */

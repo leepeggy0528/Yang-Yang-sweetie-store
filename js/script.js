@@ -34,3 +34,7 @@ function init() {
     }
 }
 window.addEventListener("load",init,false);
+
+$("#top").click (function(){
+    $("html,body").animate({scrollTop:0 },500);
+});

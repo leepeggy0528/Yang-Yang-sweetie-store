@@ -149,7 +149,7 @@ header .else button:hover{
     }
     .logo{
         width: 15%;
-        margin-left: 23%;
+        margin-left: calc((100% - 15%) / 2 - 70px);
     }
     .menu{
         display: none;
@@ -221,3 +221,38 @@ main #title{
     margin: auto;
     margin-bottom: 40px;
 }
+
+@media only screen and (max-width:767px){
+    main .title{
+        width: 90%;
+    }
+    main h2::after{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:768px) {
+    main .title{
+        width: 90%;
+    }
+    main h2::after{
+        width: 30%;
+    }
+}
+@media only screen and (min-width:992px) {
+    main .title{
+        width: 960px;
+    }
+    main h2::after{
+        width: 20%;
+    }
+}
+
+/* @media only screen and (max-width:767px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:992px) {
+
+} */

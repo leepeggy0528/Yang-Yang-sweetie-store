@@ -10,7 +10,6 @@ main h2{
 }
 main h2::after{
     content: "";
-    width: 20%;
     border-bottom: 2px solid #815093;
     color: #815093;
     position: absolute;
@@ -25,20 +24,57 @@ section{
     margin-bottom: 0;
 }
 main .title{
-    width: 960px;
     margin: auto;
 }
-
+@media only screen and (max-width:767px){
+    main .title{
+        width: 90%;
+    }
+    main h2::after{
+        width: 50%;
+    }
+}
+@media only screen and (min-width:768px) {
+    main .title{
+        width: 90%;
+    }
+    main h2::after{
+        width: 30%;
+    }
+}
+@media only screen and (min-width:992px) {
+    main .title{
+        width: 960px;
+    }
+    main h2::after{
+        width: 20%;
+    }
+}
 /* items */
 #items{
     background: linear-gradient(180deg, rgba(237,207,209,1) 0%, rgba(255,226,229,1) 100%);
 }
 .items{
-    width: 800px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 90px;
+}
+
+@media only screen and (max-width:767px){
+    .items{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:768px) {
+    .items{
+        width: 80%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .items{
+        width: 800px;
+    }
 }
 .cake{
     display: flex;
@@ -46,7 +82,6 @@ main .title{
     align-items: center;
 }
 .cake .pt{
-    width: 40%;
     position: relative;
     
 }
@@ -84,9 +119,6 @@ main .title{
     top: 20px;
     left: 25px;
 }
-.cake:nth-child(2){
-    flex-direction: row-reverse;
-}
 .cake:last-child{
     margin-bottom: 70px;
 }
@@ -114,17 +146,58 @@ main .title{
     font-size: 1.3rem;
     font-family: 'Comic Sans MS';
     margin-left: auto;
-    margin-right: -75px;
     color: #9d5f6d;
 }
 .cake .context a:hover{
     color: #bb7f8d;
 }
-.cake:nth-child(2) .context{
-    margin-left: 0%;
-}
+
 .cake:nth-child(2) .pt{
     margin-right: 3%;
+}
+
+@media only screen and (max-width:767px){
+    .cake,.cake:nth-child(2){
+        flex-direction: column;
+    }
+    .cake .pt::after{
+        display: none;
+    }
+    .cake .pt{
+        width: 80%;
+    }
+    .cake .context{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .cake .pt p{
+        color: rgb(0, 0, 0);
+    }
+}
+@media only screen and (min-width:768px) {
+    .cake .pt::after{
+        display: block;
+    }
+    .cake .pt{
+        width: 40%;
+    }
+    .cake:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .cake .context{
+        width: 40%;
+    }
+    .cake .context a{
+        margin-right: -75px;
+    }
+    .cake:nth-child(2) .context{
+        margin-left: 0%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .items{
+        width: 800px;
+    }
 }
 /* category */
 #category{
@@ -197,7 +270,6 @@ main .title{
     background: linear-gradient(180deg, rgba(255,236,243,1) 0%, rgba(239,214,220,1) 100%);
 }
 .recommend{
-    width: 750px;
     height: 300px;
     margin: 0 auto 30px;
     background: linear-gradient(180deg, rgba(250,214,228,1) 0%, rgba(226,154,171,1) 100%);
@@ -215,16 +287,8 @@ main .title{
     margin-bottom: 25px;
     position: relative;
 }
-.context p:first-child{
+.context p:first-child,.context p:nth-child(2),.context p:last-child{
     position: relative;
-}
-.context p:nth-child(2){
-    position: relative;
-    left: 20%;
-}
-.context p:last-child{
-    position: relative;
-    left: 50%;
 }
 .recommend .pt{
     width: 20%;
@@ -251,4 +315,60 @@ main .title{
     color:#fff27a;
     border: 2px solid #fff278;
     cursor: pointer;
+}
+@media only screen and (max-width:767px){
+    .recommend{
+        width: 75%;
+    }
+    .context p:nth-child(2){
+        left: 10%;
+    }
+    .context p:last-child{
+        left: 30%;
+    }
+}
+@media only screen and (max-width:500px){
+    .recommend{
+        width: 75%;
+    }
+    .context p:nth-child(2){
+        left: 0;
+    }
+    .context p:last-child{
+        left: 0;
+    }
+    .recommend .context{
+        margin: 30px 10px 25px;
+    }
+    .recommend .pt {
+        width: 25%;
+        transform: rotate(-10deg);
+        bottom: 8%;
+    }
+    .recommend button {
+        width: 50%;
+        padding: 10px 5px;
+        left: 40%;
+    }
+    
+}
+
+@media only screen and (min-width:768px) {
+    .recommend{
+        width: 75%;
+    }
+    .context p:nth-child(2){
+        left: 20%;
+    }
+    .context p:last-child{
+        left: 45%;
+    }
+}
+@media only screen and (min-width:992px) {
+    .recommend{
+        width: 750px;
+    }
+    .context p:last-child{
+        left: 50%;
+    }
 }
