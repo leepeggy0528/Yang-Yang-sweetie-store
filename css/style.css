@@ -27,15 +27,15 @@ img{
 /* Header */
 header{
     display: flex;
-    flex-direction: column;
     position: relative;
     background: linear-gradient(180deg, rgba(185,163,123,1) 0%, rgba(255,255,255,1) 100%);
     box-shadow: 0px 0px 8px 0px #8b252dba;
 }
 .logo{
     margin: 10px auto 5px;
-    width: 6%;
 }
+
+/* menu */
 .menu{
     margin-bottom: 5px;
 }
@@ -44,15 +44,12 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-.menu li{
+.menu li,.hamburger li{
     font-weight: bold;
     list-style: none;
 }
-.menu li:first-child{
-    position: relative;
-}
 
-.menu a{
+.menu a, .hamburger a{
     text-decoration: none;
     font-size: 1.5rem;
     color: #a57b36;
@@ -64,6 +61,69 @@ header{
 
 }
 
+/* hamburger */
+.btnHB{
+    position: relative;
+}
+#btnHamburger{
+    width: 50px;
+    height: 50px;
+    margin: 13px 10px;    
+    position: relative;
+    z-index: 1;
+    border: none;    
+    background-color: unset;
+}
+.btnHB span{
+    width: 32px;
+    height: 2.66666666px;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: top .5s, bottom .5s, opacity .5s, transform .2s .5s;
+}
+.btnHB span:nth-child(2){
+    transform:rotate(0deg);
+    top: 23px;
+}
+.btnHB span:last-child{
+    transform:rotate(0deg);
+    bottom: 23px;
+}
+.btnHB span:nth-child(3){
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.menuHB{
+    position: absolute;
+    left: -150px;
+    top: 100%;
+    z-index: 999;
+    width: 130px;
+    height: 100vh;
+    padding-left: 6px;
+    background-color: #f1f1f5f5;
+}
+.menuHB li{
+    margin: 25px auto;
+}
+.menuHB li:first-child{
+    margin-top: 10px;
+}
+.hamburger .open {
+	left: 0px;
+	transition: left 1s;
+}
+.hamburger .close {
+	left: -120px;
+	transition: right 1s;
+}
+/* else */
 header .else{
     position: fixed;
     z-index: 999;
@@ -79,6 +139,39 @@ header .else button{
 }
 header .else button:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width:767px) {
+    header{
+        flex-direction: row-reverse;
+        position: relative;
+        align-items: center;
+    }
+    .logo{
+        width: 15%;
+        margin-left: 23%;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) {
+    header{
+        flex-direction: column;
+        position: relative;
+    }
+    .logo{
+        width: 6%;
+    }
+    .menu{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+@media only screen and (min-width:992px) {
+
 }
 /* Footer */
 footer{
