@@ -56,3 +56,18 @@ window.addEventListener("load",function () {
         },false);
     }   
 },false);
+
+window.addEventListener("load",function(){
+    let img=document.querySelectorAll(".pt_else img");
+    for (let i = 0; i < img.length; i++) {
+        img[i].addEventListener('click',function (e){
+            let small=e.target;
+            small_src=small.src;
+            document.getElementById("large").src=small_src;
+        },false);
+    }
+}, false);
+
+
+
+

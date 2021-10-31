@@ -307,6 +307,9 @@ flex-direction: column; */
     h2{
         margin-left: 5px;
     }
+    button.btn_img {
+        width: 33.3333%;
+    }
 }
 @media only screen and (max-width:500px) {
     #items{
@@ -323,6 +326,7 @@ flex-direction: column; */
     }
     .pt_main {
         margin-right: 10px;
+        width: 1000%;
     }
     #items .pt_else {
         width: 200%;
@@ -332,10 +336,16 @@ flex-direction: column; */
     #items .items_context {
         margin-left: 10px;
     }
+    button.btn_img {
+        width: auto;
+    }
 }
 @media only screen and (min-width:768px) {
     h2{
         margin-left: 5px;
+    }
+    button.btn_img {
+        width: 33.3333%;
     }
 }
 @media only screen and (min-width:992px) {
