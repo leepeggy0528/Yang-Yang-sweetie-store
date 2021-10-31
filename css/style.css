@@ -24,6 +24,9 @@ img{
     width: 100%;/* image 會繼承父元素的寬度 */
 }
 
+.menu nav ul li:nth-child(3){
+    display: none;
+}
 /* Header */
 header{
     display: flex;
