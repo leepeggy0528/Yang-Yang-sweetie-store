@@ -128,6 +128,11 @@
     }
 
 }
+@media screen and (max-height:500px) {
+    .row-cols-sd-2 > .col{
+        flex: 0 0 50%;
+    }
+}
 @media screen and (min-width:1024px) {
     .cols-lg > .col{
         flex: 1 0 0%;

@@ -9,6 +9,11 @@ section{flex-wrap: wrap;}
         flex-direction: column;
     }
 }
+@media only screen and (max-height:500px) {
+    .col{
+        flex-direction: row;
+    }
+}
 @media only screen and (min-width:768px) {
 
 }
@@ -99,7 +104,6 @@ section{flex-wrap: wrap;}
     color: #2a5a61;
     font-weight: bold;
     font-size: 1.3rem;
-    margin-left: 20px;
 }
 .list div button{
     margin-left: 0;
@@ -121,7 +125,6 @@ section{flex-wrap: wrap;}
 .list li::after{
     content: "/";
     color: #2a5a61;
-    margin-left: 20px;
     font-weight:bolder;
 }
 .list li div button::before{
@@ -141,7 +144,6 @@ section{flex-wrap: wrap;}
     width: 400%;
     position: absolute;
     top: 20px;
-    left: -20px;
     text-align: center;
    
 /* display: flex;
@@ -150,6 +152,55 @@ flex-direction: column; */
 .list li:nth-child(3) div{
     left: -50px;
 } 
+@media only screen and (max-width:767px) {
+    .list button{
+        margin-left: 10px;
+    }
+    .list li::after{
+        margin-left: 10px;
+    }
+    .list li div {
+        left: -35px;
+    }
+}
+@media only screen and (max-width:500px) {
+    main #title{
+        margin-bottom: 35px;
+    }
+    .list{
+        flex-direction: column;
+    }
+    .list button{
+        margin-left: 5px;
+    }
+    .list li::after{
+        margin-left: 5px;
+    }
+    .list li div button::before{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .list li:nth-child(3) div{
+        left: -95px;
+    } 
+    .list li div{
+        width: 385%;
+    }
+    
+}
+@media only screen and (min-width:768px) {
+    .list button{
+        margin-left: 20px;
+    }
+    .list li::after{
+        margin-left: 20px;
+    }
+    .list li div {
+        left: -20px;
+    }
+}
+@media only screen and (min-width:992px) {
+}
 .search{
     display: flex;
     align-items: center;
@@ -158,7 +209,14 @@ flex-direction: column; */
 .search:hover img{
    transform: scale(1.2);
 }
-
+@media only screen and (max-width:500px) {
+    .search{
+        width: 7%;
+        margin-top: 15px;
+        position: relative;
+        z-index: 1000;
+    }
+}
 #sort{
     margin-left: auto;
     font-size: 1rem;
@@ -168,4 +226,25 @@ flex-direction: column; */
     border-radius: 4px;
     color: #612a2a;
     background-color: #ffffffc9;
+}
+
+@media only screen and (max-width:767px) {
+    #sort{
+        width: 25%;
+    }
+}
+@media only screen and (max-width:500px) {
+    #sort{
+        width: 35%;
+    }
+}
+@media only screen and (min-width:768px) {
+    #sort{
+        width: 20%;
+    }
+}
+@media only screen and (min-width:992px) {
+    #sort{
+        width: 15%;
+    }
 }

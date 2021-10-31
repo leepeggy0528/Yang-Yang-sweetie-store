@@ -212,7 +212,6 @@ main #title h2::after{
 section{
     display: flex;
     overflow: hidden;
-    width: 960px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -223,27 +222,36 @@ main #title{
 }
 
 @media only screen and (max-width:767px){
-    main .title{
+    main #title{
         width: 90%;
     }
-    main h2::after{
+    main #title h2::after{
         width: 50%;
+    }
+    section{
+        width: 96%;
     }
 }
 @media only screen and (min-width:768px) {
-    main .title{
+    main #title{
         width: 90%;
     }
-    main h2::after{
+    main #title h2::after{
         width: 30%;
+    }
+    section{
+        width: 96%;
     }
 }
 @media only screen and (min-width:992px) {
-    main .title{
+    main #title{
         width: 960px;
     }
-    main h2::after{
+    main #title h2::after{
         width: 20%;
+    }
+    section{
+        width: 960px;
     }
 }
 
