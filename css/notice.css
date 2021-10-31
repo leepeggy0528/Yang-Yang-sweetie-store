@@ -33,7 +33,30 @@ ul{
     margin: 10px;
     margin-left: 15px;
 }
-
+@media only screen and (max-width:767px) {
+    .list{
+        display: none;
+    }
+    .context::before{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px) {
+    .list{
+        display: none;
+    }
+    .context::before{
+        display: none;
+    }
+}
+@media only screen and (min-width:992px) {
+    .list{
+        display: block;
+    }
+    .context::before{
+        display: block;
+    }
+}
 
 /* context */
 .context{
