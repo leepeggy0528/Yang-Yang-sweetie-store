@@ -6,7 +6,7 @@ form,label{
     flex-direction: column;
 }
 form {
-    gap: 25px;
+    gap: 40px;
     margin: auto;
     width: 70%;
     margin-bottom: 20px
@@ -19,14 +19,14 @@ label {
 input, textarea {
     width: 90%;
     margin: auto;
-    height: 30px;
+    height: 35px;
     padding: 10px;
     border: unset;
     border-radius: 3px;
 }
 textarea{
     resize: unset;
-    height: 150px;
+    height: 200px;
 }
 
 form button{
@@ -36,7 +36,7 @@ form button{
     border: #93506c 2px solid;
     width: 50%;
     padding: 10px;
-    margin: auto;
+    margin: 10px auto 20px;
     border-radius: 3px;
     text-align: center;
 }
