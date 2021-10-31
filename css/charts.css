@@ -89,6 +89,20 @@
     color: #df7ea6;
     cursor:cell;
 }
+@media only screen and (max-width:767px) {
+    .items .pt {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .items a{
+        flex-direction: column;
+    }
+    .items .pt img {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+}
 /* title */
 #title{
     display: flex;
